@@ -11,14 +11,15 @@ html {
 
 /* HEADER *****************************************************************/
 
-.nav-bar {
-  background-color: #f5f5f6;
+.menu {
+  display: none;
 }
 
 .nav-box {
-  max-width: 95rem;
+  background-color: #eeeeee;
+  max-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   margin-inline: auto;
   padding: 1.8rem 2.5rem;
@@ -190,4 +191,53 @@ input::-webkit-inner-spin-button {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    /* background-color: lightblue; */
+  }
+
+  .currency-box {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+  }
+
+  .box1 {
+    margin-bottom: 4rem;
+  }
+
+  .box2 {
+    margin-bottom: -5rem;
+  }
+
+  .header-text {
+    text-align: center;
+  }
+
+  .nav-list li a {
+    /* display: none; */
+  }
+
+  .main-box {
+    width: 45rem;
+  }
+
+  .menu {
+    display: block;
+    color: #833ae0;
+    cursor: pointer;
+  }
+
+  .nav-list {
+    display: none;
+    flex-direction: column;
+  }
+
+  .nav-box {
+    /* height: 35rem; */
+    align-items: flex-start;
+  }
 }
